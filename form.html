@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+</head>
+<script>
+    elSelect.addEventListener("lugar",()=>{
+        laImagen.setAttribute("src","https://s3-us-west-2.amazonaws.com/s.cdpn.io/222579/" + lugar.selectedOptions[0].value + ".jpg")
+    })
+
+</script>
+<style>
+.container{
+    display: grid;
+    grid-template-columns: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px 350px;
+  align-items: start;
+  background: var(--white);
+  background-size: cover;
+  border: 3px solid var(--black);
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.item {
+  border: 3px solid var(--black);
+  margin: 8px;
+  border-radius: 20px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.item:nth-child(2) {
+    margin-left: 100px;
+    justify-content: space-around;
+}
+
+.product-card{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+</style>
+<body>
+
+    <div class="container">
+        <div class="item">
+            <div class="product-card">
+                <label for="cotizacion" class="product-card">Por favor elija un salón o jardín  <select id="lugar" name="lugar" required="">
+                    <option value="Rebsamen">Rebsamen</option>
+                    <option value="Jalil">Jalil</option>
+                    <option value="Patriotismo">Patriotismo</option>
+                    <option value="Roma">Roma</option>
+                    </select>
+                </label>
+            </div>
+        
+            <div class="product-card">
+                <label for="cotizacion" class="product-card">Por favor elija el numero de personas para su evento <select id="numero" name="numero" required="">
+                    <option value="20">20 Personas</option>
+                    <option value="30">30 Personas</option>
+                    <option value="40">40 Personas</option>
+                    <option value="50">50 Personas</option>
+                    <option value="60">60 Personas</option>
+                    <option value="70">70 Personas</option>
+                    <option value="80">80 Personas</option>
+                    <option value="90">90 Personas</option>
+                    <option value="100">100 Personas</option>
+                    </select>
+                </label>
+            </div>
+        
+            <div class="product-card">
+                <label for="cotizacion" class="product-card">Por favor elija un paquete para su evento  <select id="paquete" name="paquete" required="">
+                    <option value="Plata">Plata</option>
+                    <option value="Oro">Oro</option>
+                    <option value="Diamante">Diamante</option>
+                    </select>
+                </label><a href="https://conceptozero.com.mx/#:~:text=de%20tu%20evento-,Paquete%20plata,-%C2%BFQu%C3%A9%20incluye%20el" target="_blank">¿No sabe que incluyen los paquetes?</a>
+            </div>
+
+            <div class="product-card">
+            
+                <input for="cotizacion"" type="submit" value="Buscar cotización">
+                
+            </div>
+
+        </div>
+
+        <div class="item">
+            <img src="https://storage.googleapis.com/production-hostgator-mexico-v1-0-1/871/1114871/8S4yhYAj/3a01c8fd45214245b7f4b34681759841" alt="">
+        </div>
+
+    </div>
+    
+    
+
+</body>
+</html>
